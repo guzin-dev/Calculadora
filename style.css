@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'AlexandriaR';
+    src: url(fonts/Alexandria/Alexandria-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'AlexandriaSB';
+    src: url(fonts/Alexandria/Alexandria-SemiBold.ttf)
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #191919;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: AlexandriaR;
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #191919;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+b {
+    font-family: AlexandriaSB;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.calculator-aligner {
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  max-width: 400px;
+  border-radius: 1em;
+  gap: 20px;
+}
+
+.result {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: right;
+  color: #FFF;
+  font-size: 2em;
+  overflow: hidden;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+#first-number {
+  font-size: 0.6em;
+  color: #623f92;
+}
+
+.buttons button {
+  height: 4em;
+  width: 4em;
+  font-size: 1.5em;
+  background-color: #292929;
+  border-radius: 0.5em;
+  border-color: transparent;
+  margin: 2px;
+  -webkit-box-shadow: -1px 3px 43px -12px rgba(80, 80, 80, 0.62);
+  color: #FFF;
+  transition: 400ms ease;
+}
+
+#none {
+  cursor: default;
+  background-color: #292929;
+}
+
+#none:hover {
+  cursor: default;
+}
+
+.buttons button:hover {
+  background-color: #414141;
+  cursor: pointer;
+}
+
+#equals {
+  background-color: #4C3171;
+}
+
+#equals:hover {
+  background-color: #623f92;
+}
+
+.buttons div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+    padding: 1em;
+    width: 100vw;
+    height: fit-content;
+    background-color: #4C3171;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer p {
+    color: #FFF;
+}
+
+footer a {  
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 600px)
+{
+  .calculator-aligner {
+    padding: 1em;
+  }
+  .buttons button {
+    height: 3em;
+    width: 3em;
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calculator-aligner">
+            <div class="result">
+                <p id="first-number">0</p>
+                <p id="result">0</p>
+            </div>
+            <div class="buttons">
+                <div class="first-column">
+                    <button onclick="percent()">%</button>
+                    <button onclick="removeNumber()">CE</button>
+                    <button onclick="clearResult()">AC</button>
+                    <button onclick="divide()">/</button>
+                </div>
+                <div class="second-column">
+                    <button onclick="writeNumber(7)">7</button>
+                    <button onclick="writeNumber(8)">8</button>
+                    <button onclick="writeNumber(9)">9</button>
+                    <button onclick="multiply()">x</button>
+                </div>
+                <div class="third-column">
+                    <button onclick="writeNumber(4)">4</button>
+                    <button onclick="writeNumber(5)">5</button>
+                    <button onclick="writeNumber(6)">6</button>
+                    <button onclick="subtract()">-</button>
+                </div>
+                <div class="fourth-column">
+                    <button onclick="writeNumber(1)">1</button>
+                    <button onclick="writeNumber(2)">2</button>
+                    <button onclick="writeNumber(3)">3</button>
+                    <button onclick="sum()">+</button>
+                </div>
+                <div class="fifth-column">
+                    <button id="none"></button>
+                    <button id="zero" onclick="writeNumber(0)">0</button>
+                    <button>.</button>
+                    <button id="equals" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/guzin-dev" target="_blank"><p>Powered by <b>guzin-dev</b></p></a>
+        <a href="https://github.com/guzin-dev/CRUD-JS" target="_blank"><img src="./img/github-icon.svg" alt=""></a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
